@@ -1,0 +1,15 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "Takin notes and gettin da skills",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Colin McMurtray",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {}
+}
