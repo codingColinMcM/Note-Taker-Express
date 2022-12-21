@@ -4,7 +4,7 @@ let saveNoteBtn;
 let newNoteBtn;
 let noteList;
 
-if (window.location.pathname === '/notes') {
+if (window.location.href == 'http://localhost:3001/notes.html') {
   noteTitle = document.querySelector('.note-title');
   noteText = document.querySelector('.note-textarea');
   saveNoteBtn = document.querySelector('.save-note');
@@ -26,7 +26,7 @@ const hide = (elem) => {
 let activeNote = {};
 
 const getNotes = () =>
-  fetch('/api/notes', {
+  fetch('http://localhost:3001/api/notes', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ const getNotes = () =>
   });
 
 const saveNote = (note) =>
-  fetch('/api/notes', {
+  fetch('http://localhost:3001/notes', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ const saveNote = (note) =>
   });
 
 const deleteNote = (id) =>
-  fetch(`/api/notes/${id}`, {
+  fetch(`http://localhost:3001/api/notes/${id}`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ const renderActiveNote = () => {
 const handleNoteSave = () => {
   const newNote = {
     title: noteTitle.value,
-    text: noteText.value,
+    textarea: noteText.value,
   };
   saveNote(newNote).then(() => {
     getAndRenderNotes();
@@ -83,9 +83,9 @@ const handleNoteDelete = (e) => {
   e.stopPropagation();
 
   const note = e.target;
-  const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).id;
+  const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).noteID;
 
-  if (activeNote.id === noteId) {
+  if (activeNote.noteID === noteId) {
     activeNote = {};
   }
 
@@ -117,12 +117,12 @@ const handleRenderSaveBtn = () => {
 };
 
 // Render the list of note titles
-const renderNoteList = async (notes) => {
-  let jsonNotes = await notes.json();
-  if (window.location.pathname === '/notes') {
+const renderNoteList = async () => {
+  let jsonNotes = await(await fetch('http://localhost:3001/api/notes')).json();
+  if (window.location.href == 'http://localhost:3001/notes.html') {
     noteList.forEach((el) => (el.innerHTML = ''));
   }
-
+  
   let noteListItems = [];
 
   // Returns HTML element with or without a delete button
@@ -165,7 +165,7 @@ const renderNoteList = async (notes) => {
     noteListItems.push(li);
   });
 
-  if (window.location.pathname === '/notes') {
+  if (window.location.href == 'http://localhost:3001/notes.html') {
     noteListItems.forEach((note) => noteList[0].append(note));
   }
 };
@@ -173,7 +173,7 @@ const renderNoteList = async (notes) => {
 // Gets notes from the db and renders them to the sidebar
 const getAndRenderNotes = () => getNotes().then(renderNoteList);
 
-if (window.location.pathname === '/notes') {
+if (window.location.href == 'http://localhost:3001/notes.html') {
   saveNoteBtn.addEventListener('click', handleNoteSave);
   newNoteBtn.addEventListener('click', handleNewNoteView);
   noteTitle.addEventListener('keyup', handleRenderSaveBtn);
@@ -181,3 +181,4 @@ if (window.location.pathname === '/notes') {
 }
 
 getAndRenderNotes();
+

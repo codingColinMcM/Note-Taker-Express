@@ -1,0 +1,17 @@
+[
+    {
+        "title": "king",
+        "textarea": "Tywin",
+        "noteID": "3672"
+    },
+    {
+        "title": "queen",
+        "textarea": "Sansa",
+        "noteID": "b46f"
+    },
+    {
+        "title": "newNote",
+        "textarea": "hello",
+        "noteID": "ab68"
+    }
+]
