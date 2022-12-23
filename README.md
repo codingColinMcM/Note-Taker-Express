@@ -1,1 +1,1 @@
-git # note-taker
+# note-taker
