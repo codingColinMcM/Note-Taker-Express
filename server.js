@@ -18,15 +18,17 @@ app.get("/", (req, res) => {
     res.sendFile(path.dirname + "./index.html")
     console.log("hello")
 })
+
+app.put('/api/notes', (req, res) => {
+  
+})
+
 app.get('/api/notes', (req, res) => {
 
   const notes = require('./db/notes');
-
-  // Log our request to the terminal
+  //console.log(notes)
   res.json(notes)
-    
-});
-
+})
 // How to respond to a "post" request
 
 app.post('/notes', (req, res) => {
