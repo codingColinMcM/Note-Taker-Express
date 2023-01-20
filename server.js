@@ -14,7 +14,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.static("public"));
 
 // How to respond to a "get" request
-app.get("/", (req, res) => {
+app.get("/main", (req, res) => {
     res.sendFile(path.dirname + "./index.html")
     console.log("hello")
 })
@@ -25,9 +25,15 @@ app.put('/api/notes', (req, res) => {
 
 app.get('/api/notes', (req, res) => {
 
-  const notes = require('./db/notes');
+  fs.readFile('./db/notes.json', 'utf8', (err, data) => {
+    if (err) {
+        console.error(err)
+    } else {
+        const notes = JSON.parse(data);
+        res.json(notes)
+    }
+  })
   //console.log(notes)
-  res.json(notes)
 })
 // How to respond to a "post" request
 
