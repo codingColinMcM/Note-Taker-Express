@@ -26,7 +26,7 @@ const hide = (elem) => {
 let activeNote = {};
 
 const getNotes = () =>
-  fetch('/api/notes', {
+  fetch('https://fierce-spire-62517.herokuapp.com/api/notes', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ const getNotes = () =>
   });
 
 const saveNote = (note) =>
-  fetch('/notes', {
+  fetch('https://fierce-spire-62517.herokuapp.com/notes', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ const saveNote = (note) =>
   });
 
 const deleteNote = (id) =>
-  fetch(`/api/notes/${id}`, {
+  fetch(`https://fierce-spire-62517.herokuapp.com/api/notes/${id}`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',
@@ -119,8 +119,8 @@ const handleRenderSaveBtn = () => {
 
 // Render the list of note titles
 const renderNoteList = async () => {
-  let jsonNotes = await(await fetch('/api/notes')).json();
-  if (window.location.href == '/notes.html') {
+  let jsonNotes = await(await fetch('https://fierce-spire-62517.herokuapp.com/api/notes')).json();
+  if (window.location.href == 'https://fierce-spire-62517.herokuapp.com/notes.html') {
     noteList.forEach((el) => (el.innerHTML = ''));
   }
   

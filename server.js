@@ -21,10 +21,6 @@ app.get("/main", (req, res) => {
     console.log("hello")
 })
 
-app.put('/api/notes', (req, res) => {
-  
-})
-
 app.get('/api/notes', (req, res) => {
 
   fs.readFile('./db/notes.json', 'utf8', (err, data) => {
