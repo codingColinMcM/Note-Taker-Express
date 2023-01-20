@@ -8,6 +8,8 @@ const uuid = require('./helpers/uuid');
 // Use ecpress to instantiate/create a copy of a web server
 var app = express();
 
+const PORT = process.env.PORT || 3001;
+
 // Using milware before routing
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
@@ -120,4 +122,6 @@ app.delete('/api/notes/:noteID', (req, res) => {
 
     res.json(newNotes);
 });
-app.listen(3001)
+app.listen(PORT, () =>
+  console.log(`App listening at http://localhost:${PORT} 🚀`)
+);
