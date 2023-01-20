@@ -4,7 +4,7 @@ let saveNoteBtn;
 let newNoteBtn;
 let noteList;
 
-if (window.location.href == 'http://localhost:3001/notes.html') {
+if (window.location.href == '/notes.html') {
   noteTitle = document.querySelector('.note-title');
   noteText = document.querySelector('.note-textarea');
   saveNoteBtn = document.querySelector('.save-note');
@@ -119,8 +119,8 @@ const handleRenderSaveBtn = () => {
 
 // Render the list of note titles
 const renderNoteList = async () => {
-  let jsonNotes = await(await fetch('http://localhost:3001/api/notes')).json();
-  if (window.location.href == 'http://localhost:3001/notes.html') {
+  let jsonNotes = await(await fetch('/api/notes')).json();
+  if (window.location.href == '/notes.html') {
     noteList.forEach((el) => (el.innerHTML = ''));
   }
   
@@ -166,7 +166,7 @@ const renderNoteList = async () => {
     noteListItems.push(li);
   });
 
-  if (window.location.href == 'http://localhost:3001/notes.html') {
+  if (window.location.href == '/notes.html') {
     noteListItems.forEach((note) => noteList[0].append(note));
   }
 };
@@ -174,7 +174,7 @@ const renderNoteList = async () => {
 // Gets notes from the db and renders them to the sidebar
 const getAndRenderNotes = () => getNotes().then(renderNoteList);
 
-if (window.location.href == 'http://localhost:3001/notes.html') {
+if (window.location.href == '/notes.html') {
   saveNoteBtn.addEventListener('click', handleNoteSave);
   newNoteBtn.addEventListener('click', handleNewNoteView);
   noteTitle.addEventListener('keyup', handleRenderSaveBtn);
