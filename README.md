@@ -16,8 +16,11 @@ To solve the problem of disorganized thoughts and tasks for small business owner
 4. Implemented a save icon that appears in the navigation at the top of the page when a new note is entered, allowing users to save their notes to a JSON file.
 5. Utilized React router to enable users to navigate between the landing page and notes page.
 6. Tested the application using Jest and Enzyme to ensure that all features function correctly and that the user interface is intuitive and 
-user-friendly. <br><br>
-By following these steps, I was able to develop a note-taking application that provides small business owners with a simple, yet powerful way to organize their thoughts and tasks. This solution offers a reliable and efficient system for note-taking, allowing users to save, manage, and reference their notes with ease. 
+user-friendly.
+
+By following these steps, I was able to develop a note-taking application that provides small business owners with a simple, yet powerful 
+way to organize their thoughts and tasks. This solution offers a reliable and efficient system for note-taking, allowing users to save, 
+manage, and reference their notes with ease. 
 
 ## Screenshot
 
