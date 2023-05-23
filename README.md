@@ -15,7 +15,6 @@ To address the challenge of disorganized thoughts and tasks for small business o
 4. Employed JavaScript's native state management capabilities to handle user input and store new notes.
 5. Incorporated a save icon in the navigation bar at the top of the page, which appears when a new note is entered. This allows users to save their notes to a JSON file.
 6. Implemented an Express router to facilitate smooth navigation between the landing page and notes page.
-7. Conducted comprehensive testing of the application using Jest to ensure that all features work seamlessly and that the user interface is intuitive and user-friendly.
 
 By following these steps, I successfully developed a note-taking application that equips small business owners with a straightforward yet powerful means to organize their thoughts and tasks. This solution provides a reliable and efficient system for note-taking, enabling users to save, manage, and reference their notes effortlessly.
 
