@@ -1,7 +1,5 @@
 # Note-Taker-Express
 
-This is 5 contributions
-
 ## Description
 
 ### Problem: 
