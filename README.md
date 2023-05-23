@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-This is 5
+This is 5 contributions
 
 ## Description
 
