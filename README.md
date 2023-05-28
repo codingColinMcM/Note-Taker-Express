@@ -65,7 +65,7 @@ npm start
 
 ## Deployed Application
 
-https://fierce-spire-62517.herokuapp.com/ 
+<a href="https://fierce-spire-62517.herokuapp.com/">Note Taker</a> 
 
 ## License
 
