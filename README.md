@@ -1,7 +1,5 @@
 # Note-Taker-Express
 
-I'm frusterated that citizens didn't work out but it doesn't matter I will get the job I deserve!
-
 ## Description
 
 ### Problem: 
