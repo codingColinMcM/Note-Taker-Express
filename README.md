@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-I'm 
+I'm frusterated
 
 ## Description
 
