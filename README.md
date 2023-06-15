@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-I'm frusterated that citizens didn't work out but it doesn't matter I will
+I'm frusterated that citizens didn't work out but it doesn't matter I will get 
 
 ## Description
 
