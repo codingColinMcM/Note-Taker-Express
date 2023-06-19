@@ -1,7 +1,5 @@
 # Note-Taker-Express
 
-Now 17
-
 ## Description
 
 ### Problem: 
