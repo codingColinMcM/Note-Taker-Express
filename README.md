@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-I will get 
+I will get a
 
 ## Description
 
