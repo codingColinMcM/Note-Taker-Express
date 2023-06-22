@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-I will get a job damnit I am 
+I will get a job damnit I am getting
 
 ## Description
 
