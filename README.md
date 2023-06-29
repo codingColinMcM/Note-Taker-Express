@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-I don't
+I don't think
 
 ## Description
 
