@@ -1,10 +1,12 @@
-let noteTitle;
-let noteText;
-let saveNoteBtn;
-let newNoteBtn;
-let noteList;
+var noteTitle;
+var noteText;
+var saveNoteBtn;
+var newNoteBtn;
+var noteList;
 
-if (window.location.href == 'https://fierce-spire-62517.herokuapp.com/notes.html') {
+const thisLink = "https://fierce-spire-62517.herokuapp.com"
+
+if (window.location.href == thisLink.concat('/notes.html')) {
   noteTitle = document.querySelector('.note-title');
   noteText = document.querySelector('.note-textarea');
   saveNoteBtn = document.querySelector('.save-note');
@@ -23,10 +25,10 @@ const hide = (elem) => {
 };
 
 // activeNote is used to keep track of the note in the textarea
-let activeNote = {};
+var activeNote = {};
 
 const getNotes = () =>
-  fetch('https://fierce-spire-62517.herokuapp.com/api/notes', {
+  fetch(thisLink.concat('/api/notes'), {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -34,7 +36,7 @@ const getNotes = () =>
   });
 
 const saveNote = (note) =>
-  fetch('https://fierce-spire-62517.herokuapp.com/notes', {
+  fetch(thisLink.concat('/notes'), {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -43,7 +45,7 @@ const saveNote = (note) =>
   });
 
 const deleteNote = (id) =>
-  fetch(`https://fierce-spire-62517.herokuapp.com/api/notes/${id}`, {
+  fetch(thisLink.concat(`/api/notes/${id}`), {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',
@@ -98,9 +100,12 @@ const handleNoteDelete = (e) => {
 
 // Sets the activeNote and displays it
 const handleNoteView = (e) => {
-  e.preventDefault();
-  activeNote = JSON.parse(e.target.parentElement.getAttribute('data-note'));
-  renderActiveNote();
+  const noteData = JSON.parse(e.target.parentElement.getAttribute('data-note'));
+  const noteTitleValue = noteData.title;
+  const noteTextValue = noteData.textarea;
+
+  noteTitle.value = noteTitleValue;
+  noteText.value = noteTextValue;
 };
 
 // Sets the activeNote to and empty object and allows the user to enter a new note
@@ -119,8 +124,8 @@ const handleRenderSaveBtn = () => {
 
 // Render the list of note titles
 const renderNoteList = async () => {
-  let jsonNotes = await(await fetch('https://fierce-spire-62517.herokuapp.com/api/notes')).json();
-  if (window.location.href == 'https://fierce-spire-62517.herokuapp.com/notes.html') {
+  let jsonNotes = await(await fetch(thisLink.concat('/api/notes'))).json();
+  if (window.location.href == thisLink.concat('/notes.html')) {
     noteList.forEach((el) => (el.innerHTML = ''));
   }
   
@@ -166,7 +171,7 @@ const renderNoteList = async () => {
     noteListItems.push(li);
   });
 
-  if (window.location.href == 'https://fierce-spire-62517.herokuapp.com/notes.html') {
+  if (window.location.href == thisLink.concat('/notes.html')) {
     noteListItems.forEach((note) => noteList[0].append(note));
   }
 };
@@ -174,7 +179,7 @@ const renderNoteList = async () => {
 // Gets notes from the db and renders them to the sidebar
 const getAndRenderNotes = () => getNotes().then(renderNoteList);
 
-if (window.location.href == 'https://fierce-spire-62517.herokuapp.com/notes.html') {
+if (window.location.href == thisLink.concat('/notes.html')) {
   saveNoteBtn.addEventListener('click', handleNoteSave);
   newNoteBtn.addEventListener('click', handleNewNoteView);
   noteTitle.addEventListener('keyup', handleRenderSaveBtn);
