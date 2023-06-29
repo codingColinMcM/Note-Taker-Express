@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-I don't think I did a lot at the
+I don't think I did a lot at the gym
 
 ## Description
 
