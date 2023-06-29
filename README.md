@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-I don't think I did a lot at the gym today but I still went maybe
+I don't think I did a lot at the gym today but I still went maybe I 
 
 ## Description
 
