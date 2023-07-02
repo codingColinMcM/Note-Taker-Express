@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-I need to finish my Java flashcards. My only regret today is
+I need to finish my Java flashcards. My only regret today is not
 
 ## Description
 
