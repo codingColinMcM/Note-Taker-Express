@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-I need to 
+I need to finish
 
 ## Description
 
