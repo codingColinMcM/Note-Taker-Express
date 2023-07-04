@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-I almost got scammed today by a bogus
+I almost got scammed today by a bogus company
 
 ## Description
 
