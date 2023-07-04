@@ -1,7 +1,5 @@
 # Note-Taker-Express
 
-I almost got scammed today by a bogus company called Binary Logic IT. Thank God Brendan's better judgment helped 
-
 ## Description
 
 ### Problem: 
