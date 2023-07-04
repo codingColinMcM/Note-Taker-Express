@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-I almost got scammed today by a bogus company called Binary Logic IT
+I almost got scammed today by a bogus company called Binary Logic IT. Thank 
 
 ## Description
 
