@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-I wonder if other people will actually look at my contribution
+I wonder if other people will actually look at my contribution history
 
 ## Description
 
