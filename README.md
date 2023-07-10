@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-I wonder
+I wonder if 
 
 ## Description
 
