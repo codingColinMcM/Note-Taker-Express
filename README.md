@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-Good lord, please help me. I want to find a job so bad
+Good lord, please help me. I want to find a job so bad. I 
 
 ## Description
 
