@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-Good lord please help 
+Good lord please help me
 
 ## Description
 
