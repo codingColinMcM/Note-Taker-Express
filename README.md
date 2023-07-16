@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-Is it ironic that I am using this readme to 
+Is it ironic that I am using this readme to record
 
 ## Description
 
