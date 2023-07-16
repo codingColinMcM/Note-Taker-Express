@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-Is it ironic that I am 
+Is it ironic that I am using 
 
 ## Description
 
