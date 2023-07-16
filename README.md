@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-Is it ironic
+Is it ironic that 
 
 ## Description
 
