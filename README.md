@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-Revature really is boring
+Revature really is boring me 
 
 ## Description
 
