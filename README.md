@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-Revature really 
+Revature really is
 
 ## Description
 
