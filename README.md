@@ -1,7 +1,5 @@
 # Note-Taker-Express
 
-Revature really is boring me right now with their for loops. Whelp ig I'll just keep on going
-
 ## Description
 
 ### Problem: 
