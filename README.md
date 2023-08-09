@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-rooting for Baltimore sports is stressful. I am sweating so much for people that I somewhat know but who don't know me I shouldn't
+rooting for Baltimore sports is stressful. I am sweating so much for people that I somewhat know but who don't know me. I shouldn't care
 
 ## Description
 
