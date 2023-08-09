@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-rooting for Baltimore sports is stressful. I am sweating so
+rooting for Baltimore sports is stressful. I am sweating so much
 
 ## Description
 
