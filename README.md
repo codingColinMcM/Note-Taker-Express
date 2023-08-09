@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-rooting
+rooting for 
 
 ## Description
 
