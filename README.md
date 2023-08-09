@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-rooting for baltimore
+rooting for baltimore sports
 
 ## Description
 
