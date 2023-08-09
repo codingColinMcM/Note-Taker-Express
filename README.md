@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-rooting for Baltimore sports
+rooting for Baltimore sports is
 
 ## Description
 
