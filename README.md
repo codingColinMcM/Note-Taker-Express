@@ -1,6 +1,6 @@
 # Note-Taker-Express
 
-I am really sleepy right now, I 
+I am really sleepy right now, and I didn't
 
 ## Description
 
