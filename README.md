@@ -1,5 +1,3 @@
-
-
 # Note-Taker-Express
 
 ## Description
