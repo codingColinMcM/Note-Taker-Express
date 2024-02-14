@@ -1,5 +1,3 @@
-jgjh jgjghh ghhgjh jghhhh
-
 # Note-Taker-Express
 
 ## Description
