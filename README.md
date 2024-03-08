@@ -31,6 +31,8 @@ By following these steps, I successfully developed a note-taking application tha
 
 The application is organized into several files and folders:
 
+* The controllers folder contains all of the routing logic. This demonstrates good practice by preventing server.js from being cluttered.
+
 * The db folder contains a JSON file that stores information about the notes that the user wants to save, including the title and body of the note.
 
 * The helpers folder contains a uuid.js file that exports a function to generate a unique ID for each note. This helper function is used in server.js to assign a unique ID to each note.
