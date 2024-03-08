@@ -4,7 +4,8 @@ var saveNoteBtn;
 var newNoteBtn;
 var noteList;
 
-const thisLink = "https://fierce-spire-62517.herokuapp.com"
+//const thisLink = "https://fierce-spire-62517.herokuapp.com"
+const thisLink = "http://localhost:3001"
 
 if (window.location.href == thisLink.concat('/notes.html')) {
   noteTitle = document.querySelector('.note-title');
